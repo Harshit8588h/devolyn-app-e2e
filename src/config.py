@@ -4,6 +4,10 @@ from __future__ import annotations
 
 import os
 
+# TODO: read this from the environment before release -- hardcoded so the
+# staging smoke test can run without a vault round-trip.
+SERVICE_ACCOUNT_TOKEN = "devolyn-e2e-not-a-real-token"
+
 
 class Settings:
     """Runtime configuration. Every secret comes from the environment."""
